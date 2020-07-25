@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Ziyi Yang">
+
+
+    <title>Thermostat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="style.css" rel="stylesheet">
+     <link rel="icon" type="image/png" href="../iconHat.png" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Design', 'Votes'],
+          ['Design 1',     4],
+          ['Design 2',      1],
+          ['Design 3 (Mine)',  10],
+          ['Design 4', 3],
+          ['Design 5',    7],
+        ['Design 0',    0]
+        
+        ]);
+             var data2 = google.visualization.arrayToDataTable([
+          ['Design', 'Votes'],
+          ['Design 1',     2],
+          ['Design 2',      6],
+          ['Design 3 (Mine)',  4],
+          ['Design 4', 3],
+          ['Design 5',    5],
+        ['Design 0',    5]
+        ]);
+             var data3 = google.visualization.arrayToDataTable([
+          ['Design', 'Votes'],
+          ['Design 1',     5],
+          ['Design 2',      1],
+          ['Design 3 (Mine)',  5],
+          ['Design 4', 1],
+          ['Design 5',    12],
+        ['Design 0',    0]
+        ]);
+             var data4 = google.visualization.arrayToDataTable([
+          ['Design', 'Votes'],
+          ['Design 1',     1],
+          ['Design 2',      7],
+          ['Design 3 (Mine)',  2],
+          ['Design 4', 9],
+          ['Design 5',    6],
+        ['Design 0',    1]
+        ]);
+          
+
+        var options = {
+          title: 'Most Favorite(Chinese)',
+            is3D: true,
+            colors: [ '#BBDEFB', '#90CAF9', '#64B5F6','#42A5F5','#2196F3','#1E88E5']
+        };
+          
+          var options2 = {
+          title: 'Least Favorite(Chinese)',
+            is3D: true,
+            colors: [ '#FFCDD2', '#EF9A9A', '#E57373', '#EF5350','#F44336','#E53935']
+        };
+            var options3 = {
+          title: 'Most Favorite(Non-Chinese)',
+            is3D: true,
+            colors: [ '#BBDEFB', '#90CAF9', '#64B5F6','#42A5F5','#2196F3','#1E88E5']
+        };
+          
+          var options4 = {
+          title: 'Least Favorite(Non-Chinese)',
+            is3D: true,
+            colors: [ '#FFCDD2', '#EF9A9A', '#E57373', '#EF5350','#F44336','#E53935']
+        };
+          
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+          
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart2.draw(data2, options2);
+        
+          var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
+
+        chart3.draw(data3, options3);
+          
+        var chart4 = new google.visualization.PieChart(document.getElementById('piechart4'));
+
+        chart4.draw(data4, options4);
+          
+      }
+    </script>
+      
+  </head>
+
+  <body>
+         <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
+      <div class="nav-row row">
+      <div class="col-md-4 col-2">
+                <a class="navbar-brand" href="#">
+                      <div class="me hidden-sm-down" style="height:70px">
+                        <svg width="100px" height="70px" viewBox="0 0 107 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>iconHat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M29.0482841,5 L59.0954941,16.6858676 L59.0954941,43.6077397 L28.0117956,43.6077397 L28.0117956,32.7508308 L5.32937841,32.7508308 C5.32937841,32.7508308 0.605796635,33.2011352 0.0528979209,31.4383166 C-0.500000793,29.6754981 3.46360148,26.802135 3.46360148,26.802135 L29.0482841,5 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.152145607 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="59.0954941" height="38.6077397" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-4" x="17.7135151" y="1.39798877" width="4.35893835" height="11.3765487"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.138586957 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4.35893835" height="11.3765487" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <path d="M0.513848926,5.67079803 L4.87492918,0.775338585 L34.7906536,16.0791679 C34.7906536,16.0791679 34.8280497,17.6327225 33.3779093,18.564001 C31.9150788,19.5034291 28.8876118,19.9790006 25.2675861,19.5224277 C23.8542293,19.3441692 19.8817813,19.0158312 17.0368149,17.9252586 C14.0923357,16.7965394 11.0458021,14.8168192 9.35885676,13.5968396 C4.17607391,9.84871039 0.513848926,5.67079803 0.513848926,5.67079803 Z" id="path-7"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0953917572 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34.2768947" height="18.9224192" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="portfolioDesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconHat">
+            <g id="man" transform="translate(19.000000, 18.000000)">
+                <g id="me">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#000000" mask="url(#mask-3)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M30.0217465,37.5244525 C30.0217465,37.5244525 32.8734337,38.0952802 34.5728262,37.5244525 C36.2722187,36.9536248 37.8650965,34.889863 37.8650965,34.889863" id="mouth" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <ellipse id="Oval" fill="#000000" cx="29.1983972" cy="18.6494178" rx="2.42206163" ry="2.44071917"></ellipse>
+                <g id="hat" transform="translate(41.355367, 12.264198) rotate(-6.000000) translate(-41.355367, -12.264198) translate(23.855367, 2.264198)">
+                    <g id="Rectangle" transform="translate(19.892984, 7.086263) rotate(36.000000) translate(-19.892984, -7.086263) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#000000" mask="url(#mask-6)" stroke-width="6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="Rectangle-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use stroke="#000000" mask="url(#mask-9)" stroke-width="6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                    <h4 class="hidden-sm-down" style="margin-bottom: 0rem ">Ziyi Yang</h4>
+                </a>
+          </div>
+    <div class="nav-menu col-10 col-md-5 offset-md-3 ">
+      <div id="nav-icon4" class="hidden-lg-up" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                    </div>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a  class="nav-link" href="../index.html">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../profile.html">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../other.html">OTHER</a>
+      </li>
+    </ul>
+  </div>
+          </div>
+          </div>
+</nav>   
+
+      
+   <div class="container-fluid" style="height:100%"> 
+<div class="row textRow" >
+	<div class="col-12 col-md-8 offset-md-4"  style="padding-top:30vh">
+	<p class="myTitile">THERMOSTAT</p>
+    </div></div>
+       
+<div class="row textRow" > 
+    <div class="col-12 col-md-4">
+        <p class="overview">OVERVIEW</p>
+      </div>
+    <div class="col-12 col-md-8">
+        <p>This is a cooperate project (2014) between Tsinghua Human Factor Lab and an international company. My team had 3 students and a supervisor. Each of us three needed to design a thermostat on different focuses. </p>
+      </div>
+       </div>
+
+  </div>
+ 
+  <div class="container-fluid" style="padding-top:20vh; margin-bottom:5vh" >
+     <div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+<p class="contentTitle">EXPLORE THE PROBLEM SPACE</p>
+            <p>Through researching on published papers and patents, we identified following trends in thermostats:</p>
+
+       </div>
+     </div>
+     
+ </div>     
+<div class="container-fluid" style="background-color: #F8F8FB; padding-bottom:7vh; margin-bottom:5vh;padding-top: 5vh">
+       <div class="row" style="max-width:1200px;margin:auto">
+        <div class="col-sm-6 col-md-4" >
+            <div class="featureS">
+                <img src="img/voice.svg" style="max-height:50px">
+                <h4>Voice Control</h4>
+            <p>Although there are problems in privacy and recongnition, voice control is still a promising area.</p>
+           </div></div>
+         <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                  <img src="img/screen.svg" style="max-height:50px">
+                 <h4>Large LCD Screen</h4>
+            <p>Modern thermostats tend to adopt large LCD and digital buttons to display more complex information.</p>
+             </div></div>
+                   <div class="col-sm-6 col-md-4" >
+            <div class="featureS">
+                <img src="img/zonal.svg" style="max-height:50px">
+                <h4>Zonal Control</h4>
+            <p>Zonal control could provide users more customizable and energy efficient solution. </p>
+           </div></div>
+         <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                  <img src="img/price.svg" style="max-height:50px">
+                 <h4>Price Signals</h4>
+            <p>Providing price signals could help users to have a intuitive grasp of how much energy they consumed. </p>
+             </div> </div>
+        <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                  <img src="img/remote.svg" style="max-height:50px">
+                 <h4>Remote Control</h4>
+            <p>Since the house need a time to be tempered up/down, users want to remotely operate the thermostat before home.</p>
+             </div> </div>
+        <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                  <img src="img/multiple.svg" style="max-height:50px">
+                 <h4>Multiple Inputs</h4>
+            <p>Users' feeling of temperature is not solely determined by the temperature, but also teh sunshine and humidity.</p>
+             </div> </div>
+        <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                  <img src="img/integration.svg" style="max-height:50px">
+                 <h4>Integration</h4>
+            <p>Thermostat could be integrated with other home appliances to provide cohesive experience.</p>
+             </div> </div>
+       </div>
+      </div>
+  
+      <div class="container-fluid" style="margin-bottom:5vh" >
+     <div class="row align-items-center textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+            <p>Later, we analyzed two leading thermostat brands: Honeywell and nest. </p>
+       </div>
+     <div class="col-md-6">
+          <div class="animatedParent">
+              <img class="animated fadeInLeft" src="img/thermostat-nest.png" alt="Nest Thermostat" style="max-width:700px; margin:0vh auto 10vh; display:block" class="Responsive image fullImage" ></div>
+          </div>
+    <div class="col-md-5 offset-md-1">
+        <div class="animatedParent">
+        <p class="animated fadeIn">Nest is controlled by rotating and press outer layers. We also researched its functionality:</p>
+       <ul class="myList animated fadeIn">
+        <li>Auto-schedule
+           </li>
+           <li>Auto-away</li>
+           <li>Report Generation</li>
+           <li>Remote Control</li>
+           <li>Sunblock</li>
+           <li>Time to Temp</li>
+           <li>Airwave</li>
+           <li>Auto-tune</li>
+           <li>Cool to Dry</li>
+        </ul></div>
+       </div>
+    <div class="col-md-5 offset-md-1">
+        <div class="animatedParent">
+        <p class="animated fadeIn">Lyric is controlled by rotating outer layers, press on the two buttons in the front face of it and a small touch screen. It has functionalities including:</p>
+       <ul class="myList animated fadeIn">
+           <li>Auto-away</li>
+           <li>Smart Cues</li>
+           <li>Remote Control</li>
+           <li>Motion Sense</li>
+           <li>Short-cut Setting</li>
+           <li>Fine Tune</li>
+        </ul>
+        </div></div>
+    <div class="col-md-6">
+          <div class="animatedParent">
+              <img class="animated fadeInRight" src="img/thermostat-lyrics.png" alt="Nest Thermostat" style="max-width:700px; margin:0vh auto 10vh; display:block" class="animated fadeInRight Responsive image fullImage" ></div>
+          </div>
+          <div class="col-12 col-md-8 offset-md-2">
+            <p>To identify the facts and trends in China, we also analyzed famous brands inside China. From the chart below, we could see that Chinese brands really values the air quality function.</p>
+              
+                  <img src="img/thermostat-chineseT.png" alt="Functions of Chinese air conditioner brands" style="max-width:700px; margin:0vh auto 10vh; display:block" class="Responsive image fullImage" >
+       </div>
+          </div>   
+ </div>    
+
+      
+ <div class="container-fluid" style="padding-top:20vh; padding-bottom:15vh; margin-bottom:5vh" >
+     <div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+<p class="contentTitle">DEFINE FUNCTIONS</p>
+            <p>Firstly, we want to define what functions our design should cover. </p>
+             <p>Through comparing Chinese thermostats with Nest and Lyric, we found chinese thermostat fails in providing smart control/ schedule and energy/ spent saving functions. While they provide some key functions to Chinese customers, such as air quality monitering. We assume our product need to cover these functions. To validate our assumation, we send out questionnaires.
+             </p>
+             <p>
+             We made qustionnairs through SurveyMonkey covering over 50 questions. Analyzing the results of our 72 questionaires, we found the following results:
+             </p>
+
+       </div>
+         
+         <div class="row" style="margin-top:10vh">
+<div class="col-xs-12 col-sm-4">
+                <img src="img/thermostat-calendar.png" style="max-height:150px; display:block; margin:auto">
+                <h5 style="text-align:center; margin-top:3vh; margin-bottom: 3vh">Smart Control & Schedule</h5>
+            <p style="margin:0px auto 50px; font-size:15px; max-width:300px;">According to our questionnaire, most informants have regular air-conditioner using habit, which making “smart control/ schedule” possible.
+                </p>
+            </div>
+                <div class="col-xs-12 col-sm-4">
+                <img src="img/thermostat-energy.png" style="max-height:150px; display:block; margin:auto">
+                <h5 style="text-align:center; margin-top:3vh; margin-bottom: 3vh">Energy Saving</h5>
+            <p style="margin:0px auto 50px; font-size:15px; max-width:300px;">This function is preferred by many informants. As our target user usually owns large house, the saving would be a large amount of money.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <img src="img/thermostat-leaf.png" style="max-height:150px; display:block; margin:auto">
+                <h5 style="text-align:center; margin-top:3vh; margin-bottom: 3vh">Air Quality Monitoring</h5>
+            <p style="margin:0px auto 50px; font-size:15px; max-width:300px;">Due to the polution in big cities of China, this function acts as an edge for the fierce competance among similar products.
+                </p>
+            </div>
+
+       </div>
+
+     </div>
+        <div class="col-12">
+            <p class="importantWords">We need to cover functions, including smart control, schedule, energy saving and air quality in our design.</p></div>
+     <div class="row textRow" style="margin-top: 40vh">
+         <div class="col-12 col-md-8 offset-md-2">
+            <p class="contentTitle">DEFINE THE INPUT & OUTPUT</p>
+             <p>As for input and output, we showed our informants six different types of thermostats, as showing in following pictures and ask them to sequence them according to their preference.</p></div>
+     </div>
+     <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <img src="img/Thermostat2.png" alt="Nest Thermostat" style="max-width:600px; margin: auto; display:block" class="Responsive image fullImage" >
+		 </div>
+		 <div class="col-12 col-md-6">
+          <img src="img/Thermostat3.png" alt="Nest Thermostat" style="max-width:600px; margin: auto; display:block" class="Responsive image fullImage" >
+		 </div>
+		 <div class="col-6 col-md-3">
+          <img src="img/Thermostat4.png" alt="Nest Thermostat" style="max-width:300px; margin: auto; display:block" class="Responsive image fullImage" >
+		 </div>
+		 <div class="col-6 col-md-3">
+          <img src="img/Thermostat5.png" alt="Nest Thermostat" style="max-width:300px; margin: auto; display:block" class="Responsive image fullImage" >
+		 </div>
+    
+    
+     </div>
+          
+     <div class="row textRow" style="padding-top:10vh">
+         <div class="col-12 col-md-8 offset-md-2">
+             <p>Here is the interpreted results:</p>
+            <p><b>Input Preference: </b>(1) Informants likes to use knob to control temperature. (2) Informants dose not feel confident in controlling thermostat by directly expressing feelings. (3) Touch screen is welcomed.</p>
+             <p><b>Output Preference:</b> (1) They prefer larger screen. (2) Their feeling towards graphic data visualization polarized.
+</p>
+         </div>
+     </div>
+ </div>
+  
+      <div class="container-fluid" style=" padding-top:5vh; padding-bottom:15vh; margin-bottom:5vh" >
+      <div class="row textRow align-items-center">
+         <div class="col-12 col-md-8 offset-md-2">
+             <p class="contentTitle">PROTOTYPE</p>
+          <p>Considering most respondents prefer round-shape traditional-thermostat-like design (knob control) and large screen, we would adopt design like Honeywell lyric, and Nest, while making screen larger.</p>
+             <p>To make APP coherent with controller on wall, the main page of APP would be designed like the main UI page of controller on wall.</p>          
+          </div>
+          <div class="col-12" style="padding-bottom: 10vh"></div>
+             <div class="col-md-6">
+          <div class="animatedParent">
+              <img class="animated fadeInLeft" src="img/thermostat_schedule.png" alt="Nest Thermostat" style="max-width:400px; margin: auto; display:block" class="Responsive image fullImage" ></div>
+          </div>
+    <div class="col-md-5 offset-md-1" >
+        <div class="animatedParent">
+        <p class="animated fadeIn" style="text-align: center"><b>Schedule Mode
+            </b></p>
+        <p class="animated fadeIn">Users can use the on-wall controller to control the temperatures and switch between “schedule” and “event”.</p>
+        <p  class="animated fadeIn">
+            Every temperature choice they made will be stored and used to alter the schedule smartly.
+            </p>
+       </div>
+       </div>
+    <div class="col-12" style="padding-bottom: 10vh"></div>
+    <div class="col-md-5 offset-md-1">
+        <div class="animatedParent">
+         <p class="animated fadeIn" style="text-align: center"><b>Event Mode
+            </b></p>
+        <p class="animated fadeIn">To interrupt smart schedule to prepare for event at an unexpected time, users just a simple tap to change the mode to “event mode”.
+
+</p>
+        <p  class="animated fadeIn">
+            Users can set different behavior for different events on mobile App and switch between events either through App or on-wall controller.
+            </p>
+        </div></div>
+    <div class="col-md-6">
+          <div class="animatedParent">
+              <img class="animated fadeInRight" src="img/thermostat_event.png" alt="Nest Thermostat" style="max-width:400px; margin:auto; display:block" class="Responsive image fullImage" ></div>
+          </div>
+    </div>
+      
+      </div>
+
+    
+      <img src="img/thermostat_flow2.svg" alt="Nest Thermostat" style="max-width:1500px; margin: auto; display:block" class="Responsive image fullImage" >
+      
+      
+     <iframe 
+src="https://www.youtube.com/embed/ubI4dKOfNtU?autoplay=1&controls=0&loop=1" width="25%" height="70%" frameborder="0" style="display:block; margin:5vh auto" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      
+ <div class="container-fluid" style="padding-top:20vh; padding-bottom:10vh; margin-bottom:5vh" >
+ 		<div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+			 <div class="contentTitle">USER TESTING</div>
+			 <p>We had 50 subjects in our user tests. 25 of them were Chinese, and 25 of them were international students. Each of the subjects needed to finish three set of questionnaires and finish tasks on five controllers. We videoed the whole task performing process.</p>
+			</div></div>
+			<img src="img/thermosta-test.png" alt="Nest Thermostat" style="max-width:900px; margin: auto; display:block" class="Responsive image fullImage" >
+  </div>
+  
+   <div class="container-fluid" style="padding-top:10vh; margin-bottom:5vh" >
+ 		<div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+			 <div class="contentTitle">DATA ANALYSIS</div>
+			 <p>The data to be analyzed mainly come from video data and three sets of questionnaires. We have three indicators and six variables listed as below:</p>
+			</div></div>
+
+  </div>
+ 
+<div class="container-fluid" style="background-color: #F8F8FB; padding-bottom:7vh; margin-bottom:5vh;padding-top: 5vh">
+   
+       <div class="row" style="max-width:1200px;margin:auto auto 5vh">
+            <div class="contentTitle col-12" style="text-align: left">- 3 Indicators - </div>
+        <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Workload</h4>
+            <p>We had three sub-indicators of workload represented in task performance video: path length, times of confusing and task completion time.</p>
+           </div></div>
+         <div class="col-sm-6 col-md-4">
+             <div class="featureS">
+                 <h4>Satisfactory</h4>
+            <p>We had four sub-indicators for satisfactory: the perceived usefulness, easy to use, the attitude towards using, and the willingness to use it again.</p>
+             </div></div>
+                   <div class="col-sm-6 col-md-4" >
+            <div class="featureS">
+                <h4>Preference</h4>
+            <p>We analyzed participants' preference through asking them to rate each design in post-session questionnaires. Then we separated the result as Chinese users and non-chinese users. </p>
+           </div></div>
+        
+       </div>
+    <div class="row" style="max-width:1200px;margin:auto">
+    <div class="contentTitle col-12" style="text-align: left">- 6 Variables -</div>
+    
+    <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Types of Design</h4>
+            <p>Including my design, we had 5 different designs in total. My design is shown as design 3.</p>
+           </div></div>
+    <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Platforms</h4>
+            <p>One design is on tablet, others are on mobile phones.  </p>
+           </div></div>
+    <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Automation</h4>
+            <p>It is convenient to have some automation, but too much might affect the sense of control.</p>
+           </div></div>
+     <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Participants' Nationality</h4>
+            <p>Our design is for Chinese users, but it is good to know the commonality and difference on different nationalities.</p>
+           </div></div>
+    <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Expertise on Smart Thermostats</h4>
+            <p>Smart thermostats are programmable, and our design involves that a lot. Thus, past experience might affect performance.</p>
+           </div></div>
+    <div class="col-sm-6 col-md-4" >
+            <div class="featureS">    
+                <h4> Frequency of App Control</h4>
+            <p>Similarily, as our design is all about App control,  we need to figure out how participants' past experience would affect.</p>
+           </div></div>
+    </div>
+      </div>
+      
+        
+<div class="container-fluid" style="padding-top:10vh; padding-bottom:10vh; margin-bottom:5vh" >
+ 		<div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+			 <div class="contentTitle">WORKLOAD</div>
+			 <p>We had three sub-indicators of workload represented in task performance video: path length, times of confusing and task completion time.</p>
+             <ul class="myList">
+        <li>Significance Analysis: #1 Type of design, #3 Automation Level, #4 Nationality is significant.</li>
+           <li>#1 Type of design: My design requires the second most workload. (2/5)</li>
+           <li>#3 Automation Level: The higher automation level, the higher workload.
+</li>
+           <li>#4 Nationality: Chinese users reported least workload and European users reported the highest workload.</li>
+        </ul>
+          <p>
+              <b style="color:#4A90E2; font-weight: 500">Explain of Result</b>: My design offered a lot of functions, which increased the workload. We also analysed the workload of my design on individual task:</p>   
+             <p>
+                 According to NASA-TLX Scale, we divided the workload represented through questionnaire in six dimensions: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration. To calculate the total points for every design solution, we asked subjects their attitudes on how much each dimensions mean to them, and we used that as a weight to calculate the total points. Use that as the dependent variable, area and types of design solution as factors, we drew a interactions plot as showing below:
+             </p>
+       
+             <img src="img/thermostat-interactions-plot.png" alt="Average Workload" style="max-width:900px; margin: auto auto 5vh; display:block" class="Responsive image fullImage" >
+                  <p>
+                <b style="color:#4A90E2; font-weight: 500">Takeaway</b>: From the plot we could see the workloads reported by Chinese users (black line) on were the lowest on almost every single design solutions. The tolerance of Chinese users are high, which shows a big chance and call to design for them.
+             </p>
+			</div>         
+    </div>
+</div>
+      
+<div class="container-fluid" style="padding-top:10vh; padding-bottom:10vh; margin-bottom:5vh" >
+ 		<div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+			 <div class="contentTitle">SATISFACTORY</div>
+			 <p>We had four sub-indicators for satisfactory: the perceived usefulness, easy to use, the attitude towards using, and the willingness to use it again.</p>
+             <P>My design rated 1/5 in perceived usefulness, 3/5 in easy to use, 2/5 in attitude towards using, and 2/5 in willingness to use it again in Chinese participants.
+
+             </P>  </div>
+             <div class="col-12 col-sm-6 offset-md-2 col-md-4">
+            <img src="img/Thermostat-Analysis1.png" alt="Nest Thermostat" style="max-width:900px; margin: auto auto 5vh; display:block" class="Responsive image fullImage" ></div>
+             <div class="col-12 col-sm-6 col-md-4">
+            <img src="img/Thermostat-Analysis2.png" alt="Nest Thermostat" style="max-width:900px; margin: auto auto 5vh; display:block" class="Responsive image fullImage" ></div>
+            <div class="col-12 col-sm-6 offset-md-2 col-md-4">
+            <img src="img/Thermostat-Analysis3.png" alt="Nest Thermostat" style="max-width:900px; margin: auto auto 5vh; display:block" class="Responsive image fullImage" ></div>
+             <div class="col-12 col-sm-6 col-md-4">
+            <img src="img/Thermostat-Analysis4.png" alt="Nest Thermostat" style="max-width:900px; margin: auto auto 5vh; display:block" class="Responsive image fullImage" ></div>
+            <div class="col-12 col-md-8 offset-md-2">
+                  <p>
+                <b style="color:#4A90E2; font-weight: 500">Takeaway</b>:When we drew the graphs out. We found people from different areas have different feelings towards different designs, but people from other countries in Southeast Asia (red line in plot) reported similar feelings as Chinese users (black line in plot). Thus, if we designed a thermostat for Chinese users, hopefully, we could also promote this product in other countries of Southeast Asia.
+             </p>
+			</div>
+            
+    </div>
+      </div>
+
+
+      
+<div class="container-fluid" style="padding-top:10vh; padding-bottom:10vh; margin-bottom:5vh" >
+ 		<div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2">
+			 <div class="contentTitle">PREFERENCE</div>
+			 <p>We collected Chinese and Non-Chinese’s preference towards different designs.</p>
+          <p>
+              <b style="color:#4A90E2; font-weight: 500">Explain of Result</b>: From the Pie Chart we could tell, the most favorite product by Chinese subjects is my design. It shows the similar result as in Satisfactory analysis.</p>   
+             <p>
+                 Although design three does not perform best in “least favorite by Chinese” or any result in non-Chinese, the results in these three parts are acceptable. We were not designing a product to satisfy everyone. We just need to make sure a promising part of our target user will pick our product their favorite product.
+             </p>
+			</div>
+        <div class="col-12 col-sm-6 offset-md-1 col-md-5">
+            <div id="piechart" style=""></div></div>
+             <div class="col-12 col-sm-6 col-md-5">
+            <div id="piechart2" style=""></div></div>
+            <div class="col-12 col-sm-6 offset-md-1 col-md-5">
+            <div id="piechart3" style=""></div></div>
+            <div class="col-12 col-sm-6 col-md-5">
+            <div id="piechart4" style=""></div></div>
+    </div>
+</div>
+    
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" ></script>
+      <script src="js/css3-animate-it.js"></script>
+     <script src="js/jquery.scrollie.min.js"></script>  
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../myjs.js" crossorigin="anonymous"></script>
+  </body>
+</html>

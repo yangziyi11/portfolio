@@ -1,0 +1,13 @@
+.project-cover {
+    height:100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    margin: 0;
+}
+.cover-caption{
+    margin-top: 60vh;
+    font-size: 2.5rem;
+    text-align: left
+}
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="239" height="319" viewBox="0 0 239 319">
+  <defs>
+    <polygon id="am_pen-a" points="116.164 3.541 225 108.72 225 308 112.5 305.835 0 308 0 108.72 108.836 3.541 112.5 0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#F5A623" points="212.756 .61 200.968 39 187.505 13.655 174.342 38.435 153.926 0 133.48 38.491 119.644 12.444 110.301 28.409 101.756 12.128 87.941 39 66.684 0 47.787 33.707 30.963 13.655 21.083 38.435 0 4.17 0 187.483 212.756 187.483" transform="matrix(-1 0 0 1 239 131)"/>
+    <g transform="matrix(-1 0 0 1 225 0)">
+      <mask id="am_pen-b" fill="#fff">
+        <use xlink:href="#am_pen-a"/>
+      </mask>
+      <path stroke="#000" stroke-width="10" d="M112.5,6.95329241 L5,110.841407 L5,302.90284 L112.403784,300.835656 L112.596216,300.835656 L220,302.90284 L220,110.841407 L112.5,6.95329241 Z"/>
+      <ellipse cx="109" cy="-150" fill="#000" mask="url(#am_pen-b)" rx="112" ry="215"/>
+      <polyline stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" points="6 114.647 25.38 151 38.892 125.655 52.103 150.435 72.593 112 77.241 120.719 93.114 150.491 107 124.444" mask="url(#am_pen-b)"/>
+      <polyline stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" points="218 112.61 206.212 151 192.749 125.655 179.587 150.435 159.17 112 138.724 150.491 124.888 124.444 115.545 140.409 107 124.128" mask="url(#am_pen-b)"/>
+    </g>
+  </g>
+</svg>
