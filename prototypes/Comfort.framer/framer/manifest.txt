@@ -1,0 +1,82 @@
+app.coffee
+framer/backups/backup-2016-07-05 11.50.07.coffee
+framer/backups/backup-2016-07-05 11.51.07.coffee
+framer/backups/backup-2016-07-05 11.52.07.coffee
+framer/backups/backup-2016-07-05 11.53.07.coffee
+framer/backups/backup-2016-07-05 11.54.07.coffee
+framer/backups/backup-2016-07-05 11.55.07.coffee
+framer/backups/backup-2016-07-05 11.56.07.coffee
+framer/backups/backup-2016-07-05 11.58.07.coffee
+framer/backups/backup-2016-07-05 11.59.07.coffee
+framer/backups/backup-2016-07-05 12.00.07.coffee
+framer/backups/backup-2016-07-05 13.29.31.coffee
+framer/backups/backup-2016-07-05 13.30.31.coffee
+framer/backups/backup-2016-07-05 13.46.31.coffee
+framer/backups/backup-2016-07-05 13.47.31.coffee
+framer/backups/backup-2016-07-05 13.51.31.coffee
+framer/backups/backup-2016-07-06 14.07.59.coffee
+framer/backups/backup-2016-07-07 17.23.16.coffee
+framer/backups/backup-2016-07-11 08.39.39.coffee
+framer/backups/backup-2016-07-11 09.12.39.coffee
+framer/backups/backup-2016-07-11 09.13.39.coffee
+framer/backups/backup-2016-07-11 10.12.04.coffee
+framer/coffee-script.js
+framer/config.json
+framer/framer.generated.js
+framer/framer.init.js
+framer/framer.js
+framer/framer.js.map
+framer/framer.modules.js
+framer/images/background.png
+framer/images/cursor-active.png
+framer/images/cursor-active@2x.png
+framer/images/cursor.png
+framer/images/cursor@2x.png
+framer/images/icon-120.png
+framer/images/icon-152.png
+framer/images/icon-180.png
+framer/images/icon-192.png
+framer/images/icon-76.png
+framer/images/icon-arrow.png
+framer/images/icon-arrow@2x.png
+framer/images/icon-close.png
+framer/images/icon-close@2x.png
+framer/images/icon-framer.png
+framer/images/icon-framer@2x.png
+framer/images/icon-share.png
+framer/images/icon-share@2x.png
+framer/manifest.txt
+framer/mirror.css
+framer/preview.png
+framer/style.css
+framer/version
+images/arrow.png
+images/background.png
+images/bar.png
+images/changeTempEdited.png
+images/disabledSchedule.png
+images/GE Comfort_WAC_Main UI_V3.5 changed-07.png
+images/home.png
+images/intitial.png
+images/livingOffEdited.png
+images/livingroomOff.png
+images/livingRoomOffEdited.png
+images/longMenu.png
+images/Mode&Fan.png
+images/ModeFan.png
+images/Notification.png
+images/Original.png
+images/productInfo.png
+images/Schedule.png
+images/scheduleBackground.png
+images/scheduleBlank.png
+images/setting_unselect.png
+images/shortMenu.png
+images/targetTemp.png
+images/temperature.png
+images/temperatureEdited.png
+images/timezone.png
+images/try.png
+index.html
+modules/myModule.coffee
+modules/scaleToDevice.coffee

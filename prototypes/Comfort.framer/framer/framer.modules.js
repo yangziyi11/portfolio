@@ -1,0 +1,39 @@
+require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"myModule":[function(require,module,exports){
+exports.myVar = "myVariable";
+
+exports.myFunction = function() {
+  return print("myFunction is running");
+};
+
+exports.myArray = [1, 2, 3];
+
+
+},{}],"scaleToDevice":[function(require,module,exports){
+
+/*
+1. Add this module to your Framer by inserting this to top of your file:
+scaleToDevice = require "scaleToDevice"
+
+2. Then set a reference layer.width (should have 100% width of your prototype):
+referenceFrame = helper.scaleToDevice(MYREFERENCELAYER.width)
+
+Optional: Instead of using Framer.width or Framer.height you need to use:
+referenceFramer.width
+referenceFramer.height
+ */
+exports.scaleToDevice = function(referenceLayerWidth) {
+  var referenceHeight, referenceWidth, resizeFactor, sideFactor;
+  sideFactor = Framer.Device.screen.height / Framer.Device.screen.width;
+  referenceWidth = referenceLayerWidth;
+  referenceHeight = referenceWidth * sideFactor;
+  resizeFactor = Framer.Device.screen.width / referenceWidth;
+  Framer.Device.contentScale = resizeFactor;
+  return {
+    "width": referenceWidth,
+    "height": referenceHeight
+  };
+};
+
+
+},{}]},{},[])
+//# sourceMappingURL=data:application/json;charset:utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9icm93c2VyLXBhY2svX3ByZWx1ZGUuanMiLCIvVXNlcnMvWml5aS9EZXNrdG9wL1ppeWkgWWFuZy9mcmFtZXIgcHJvdG90eXBlcy8yLiBDb21mb3J0LmZyYW1lci9tb2R1bGVzL215TW9kdWxlLmNvZmZlZSIsIi9Vc2Vycy9aaXlpL0Rlc2t0b3AvWml5aSBZYW5nL2ZyYW1lciBwcm90b3R5cGVzLzIuIENvbWZvcnQuZnJhbWVyL21vZHVsZXMvc2NhbGVUb0RldmljZS5jb2ZmZWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUNJQSxPQUFPLENBQUMsS0FBUixHQUFnQjs7QUFFaEIsT0FBTyxDQUFDLFVBQVIsR0FBcUIsU0FBQTtTQUNwQixLQUFBLENBQU0sdUJBQU47QUFEb0I7O0FBR3JCLE9BQU8sQ0FBQyxPQUFSLEdBQWtCLENBQUMsQ0FBRCxFQUFJLENBQUosRUFBTyxDQUFQOzs7OztBQ1RsQjs7Ozs7Ozs7Ozs7QUFZQSxPQUFPLENBQUMsYUFBUixHQUF3QixTQUFDLG1CQUFEO0FBQ3ZCLE1BQUE7RUFBQSxVQUFBLEdBQWEsTUFBTSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBckIsR0FBOEIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUM7RUFDaEUsY0FBQSxHQUFpQjtFQUNqQixlQUFBLEdBQWtCLGNBQUEsR0FBaUI7RUFFbkMsWUFBQSxHQUFlLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLEtBQXJCLEdBQTZCO0VBQzVDLE1BQU0sQ0FBQyxNQUFNLENBQUMsWUFBZCxHQUE2QjtBQUU3QixTQUFPO0lBQ04sT0FBQSxFQUFTLGNBREg7SUFFTixRQUFBLEVBQVUsZUFGSjs7QUFSZ0IiLCJmaWxlIjoiZ2VuZXJhdGVkLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXNDb250ZW50IjpbIihmdW5jdGlvbiBlKHQsbixyKXtmdW5jdGlvbiBzKG8sdSl7aWYoIW5bb10pe2lmKCF0W29dKXt2YXIgYT10eXBlb2YgcmVxdWlyZT09XCJmdW5jdGlvblwiJiZyZXF1aXJlO2lmKCF1JiZhKXJldHVybiBhKG8sITApO2lmKGkpcmV0dXJuIGkobywhMCk7dmFyIGY9bmV3IEVycm9yKFwiQ2Fubm90IGZpbmQgbW9kdWxlICdcIitvK1wiJ1wiKTt0aHJvdyBmLmNvZGU9XCJNT0RVTEVfTk9UX0ZPVU5EXCIsZn12YXIgbD1uW29dPXtleHBvcnRzOnt9fTt0W29dWzBdLmNhbGwobC5leHBvcnRzLGZ1bmN0aW9uKGUpe3ZhciBuPXRbb11bMV1bZV07cmV0dXJuIHMobj9uOmUpfSxsLGwuZXhwb3J0cyxlLHQsbixyKX1yZXR1cm4gbltvXS5leHBvcnRzfXZhciBpPXR5cGVvZiByZXF1aXJlPT1cImZ1bmN0aW9uXCImJnJlcXVpcmU7Zm9yKHZhciBvPTA7bzxyLmxlbmd0aDtvKyspcyhyW29dKTtyZXR1cm4gc30pIiwiIyBBZGQgdGhlIGZvbGxvd2luZyBsaW5lIHRvIHlvdXIgcHJvamVjdCBpbiBGcmFtZXIgU3R1ZGlvLiBcbiMgbXlNb2R1bGUgPSByZXF1aXJlIFwibXlNb2R1bGVcIlxuIyBSZWZlcmVuY2UgdGhlIGNvbnRlbnRzIGJ5IG5hbWUsIGxpa2UgbXlNb2R1bGUubXlGdW5jdGlvbigpIG9yIG15TW9kdWxlLm15VmFyXG5cbmV4cG9ydHMubXlWYXIgPSBcIm15VmFyaWFibGVcIlxuXG5leHBvcnRzLm15RnVuY3Rpb24gPSAtPlxuXHRwcmludCBcIm15RnVuY3Rpb24gaXMgcnVubmluZ1wiXG5cbmV4cG9ydHMubXlBcnJheSA9IFsxLCAyLCAzXSIsIiMjI1xuMS4gQWRkIHRoaXMgbW9kdWxlIHRvIHlvdXIgRnJhbWVyIGJ5IGluc2VydGluZyB0aGlzIHRvIHRvcCBvZiB5b3VyIGZpbGU6XG5zY2FsZVRvRGV2aWNlID0gcmVxdWlyZSBcInNjYWxlVG9EZXZpY2VcIlxuXG4yLiBUaGVuIHNldCBhIHJlZmVyZW5jZSBsYXllci53aWR0aCAoc2hvdWxkIGhhdmUgMTAwJSB3aWR0aCBvZiB5b3VyIHByb3RvdHlwZSk6XG5yZWZlcmVuY2VGcmFtZSA9IGhlbHBlci5zY2FsZVRvRGV2aWNlKE1ZUkVGRVJFTkNFTEFZRVIud2lkdGgpXG5cbk9wdGlvbmFsOiBJbnN0ZWFkIG9mIHVzaW5nIEZyYW1lci53aWR0aCBvciBGcmFtZXIuaGVpZ2h0IHlvdSBuZWVkIHRvIHVzZTpcbnJlZmVyZW5jZUZyYW1lci53aWR0aFxucmVmZXJlbmNlRnJhbWVyLmhlaWdodFxuIyMjXG5cbmV4cG9ydHMuc2NhbGVUb0RldmljZSA9IChyZWZlcmVuY2VMYXllcldpZHRoKSAtPlxuXHRzaWRlRmFjdG9yID0gRnJhbWVyLkRldmljZS5zY3JlZW4uaGVpZ2h0IC8gRnJhbWVyLkRldmljZS5zY3JlZW4ud2lkdGhcblx0cmVmZXJlbmNlV2lkdGggPSByZWZlcmVuY2VMYXllcldpZHRoXG5cdHJlZmVyZW5jZUhlaWdodCA9IHJlZmVyZW5jZVdpZHRoICogc2lkZUZhY3RvclxuXG5cdHJlc2l6ZUZhY3RvciA9IEZyYW1lci5EZXZpY2Uuc2NyZWVuLndpZHRoIC8gcmVmZXJlbmNlV2lkdGhcblx0RnJhbWVyLkRldmljZS5jb250ZW50U2NhbGUgPSByZXNpemVGYWN0b3JcblxuXHRyZXR1cm4ge1xuXHRcdFwid2lkdGhcIjogcmVmZXJlbmNlV2lkdGgsXG5cdFx0XCJoZWlnaHRcIjogcmVmZXJlbmNlSGVpZ2h0XG5cdH0iXX0=
