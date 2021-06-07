@@ -6689,5 +6689,5 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .square:hover .grid-white{
-    filter: brightness(85%);
+    filter: brightness(65%);
 }

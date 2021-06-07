@@ -420,6 +420,7 @@ h3{
     font-weight:500;
     padding:5%;
     color:white;
+    text-shadow: -1px 0 #75757530, 0 1px #75757530, 1px 0 #75757530, 0 -1px #75757530;
     text-align: center;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
