@@ -387,6 +387,17 @@ h2{
   background-size: cover;
   margin-bottom: 0;
 }
+
+#ptt{
+	height:100%; min-width:100%;
+    background: url(img/PTT_cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
 #mermaidImage{
 	width: 80%;
 	margin:auto;
