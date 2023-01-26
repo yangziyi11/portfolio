@@ -113,7 +113,7 @@
             <div class="container">
                  <div class="col-xs-12 col-md-8 offset-md-2 section-name" >
                     <H5>HELLO, I AM ZIYI</H5>
-                    <h1 >I am a UX/UI designer, who has Human Factors background. I'm interested in App design, AR, and smart home. </h1>
+                    <h1 >I am a UX designer. </h1>
                      
                  </div>
                 <div class="col-xs-12 filter">
@@ -130,7 +130,7 @@
                 
                 <div class="mobile sholder col-xs-12 col-sm-6 col-lg-4">
                        <div class="square">
-                           <a href="projects/Push%20to%20talk.html">
+                           <a onclick="checkPswd2();">
                             <div class="grid-content">
                             <img class="grid-full-image grid-white" src="img/Push-to-talk_cover.png" alt="">
                             </div>
@@ -267,7 +267,7 @@
     
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
        <script type="text/javascript">
-        var confirmPassword = "ziyiyang2021";
+        var confirmPassword = "ziyiyang2023";
         function checkPswd1() {
             var password;
             password=prompt ('Enter password to view page','');
@@ -285,7 +285,17 @@
             else{
                 alert ('Wrong password. Try again.');
             }
-        }</script>
+        }
+        function checkPswd3() {
+            var password;
+            password=prompt ('Enter password to view page','');
+            if (password==confirmPassword)
+                window.location="projects/Push%20to%20talk.html";
+            else{
+                alert ('Wrong password. Try again.');
+            }
+        }
+      </script>
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" crossorigin="anonymous"></script>

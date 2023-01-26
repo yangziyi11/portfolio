@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>call end</title>
+    <g id="call-end" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#000000" stroke-width="2" cx="41.5" cy="41.5" r="33.5"></circle>
+        <g id="Group" transform="translate(27.000000, 27.000000)" stroke="#000000" stroke-linecap="round" stroke-width="2">
+            <line x1="0.483333333" y1="0.483333333" x2="28.5166667" y2="28.5166667" id="Line-3"></line>
+            <line x1="0.483333333" y1="0.483333333" x2="28.5166667" y2="28.5166667" id="Line-3" transform="translate(14.500000, 14.500000) scale(-1, 1) translate(-14.500000, -14.500000) "></line>
+        </g>
+    </g>
+</svg>
