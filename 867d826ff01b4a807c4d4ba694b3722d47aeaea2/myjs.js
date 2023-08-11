@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
 $(document).ready(function(){
 	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
 		$(this).toggleClass('open');
@@ -34,6 +37,11 @@ $('.filter a').click(function(e) {
   e.preventDefault();
   var a = $(this).attr('href');
   a = a.substr(1);
+    $(this).siblings().css("font-weight",200)
+    $(this).siblings().css("text-decoration","none")
+    $(this).css("font-weight",400)
+    $(this).css("text-decoration","underline")
+    
   $('.sets .sholder').each(function() {
     if ((!$(this).hasClass(a)) && a != 'all'){
         console.log(this);
@@ -42,7 +50,6 @@ $('.filter a').click(function(e) {
     else
       $(this).removeClass('hide');
   });
-
 });
 // Hide Header on on scroll down
 var didScroll;

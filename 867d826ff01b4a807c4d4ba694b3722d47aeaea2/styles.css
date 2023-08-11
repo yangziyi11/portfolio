@@ -470,7 +470,7 @@ h3{
   transition:all 0.2s;
 
 }
-.filter a:hover{
+.filter a:focus{
   font-weight: 400;
 }
 .filter{
@@ -483,5 +483,9 @@ h3{
 .aboutMeSec {
     height:100%;
 }
+
+
+
+
 
 

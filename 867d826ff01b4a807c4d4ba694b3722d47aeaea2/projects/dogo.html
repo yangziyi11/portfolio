@@ -119,7 +119,7 @@
         
         <div class="col-12">
         <p id="dogoTitle">DOGO</p>
-        <p id="dogoSubTitle"> Motion Sensing Game for the Elderly</p>
+        <p id="dogoSubTitle"> Game build with Leap Motion</p>
         </div>
     </div>
       </div>
@@ -129,138 +129,24 @@
  <div class="container-fluid" style="margin-bottom:3vh; padding-top:10vh" >
   <div class="row">
        <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-         <p>This is a course project for User Experience Design (2015). We are given three days to develop a motion sensing game for the elderly. It is aimed to help us understanding the design considerations we learned in class, also make us more comfortable to design with new technology.</p>
+         <p>This is a course project for User Experience Design (2015 Spring). We are given 3 days to develop a motion sensing game. The goal of this project is to help us get comfortable of adapting to new technology. </p>
 
-<p>We adopted LeapMotion to sense players’ hand motion, and we were using Unity 3D and LeapMotion API to develop. Here is the high-fidelity prototype (actually a real part) of our game.</p>
+<p>We chose to use LeapMotion to catch players’ hand movement input. Then we build 3D game with Unity 3D and worked with LeapMotion API to pass LeapMotion data into the game. Below is a video of how our game works:</p>
          <p>&nbsp;</p>
        </div>   
       </div>
      </div>
-<div class="row">
-     </div>
-      
- <div class="container-fluid" style="padding-top:5vh; padding-bottom:5vh; margin-bottom:5vh" >
-  <div class="row">
-      <div class="col-12">
-       <h1>UDERSTANDING THE NEEDS</h1>
-       <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-         <p>First, we want to decide what to do for the elderly. Based on our understanding of the elderly around us, we made following predispositions.</p>
-        <img src="img/dg_situation.png" class="img-fluid" style="width:70%; display:block; margin:0 auto 1vh;">
-        <p>Those predispositions about the needs of elderly inspired us immediately that “they need a dog!”. However, as far as our knowledge, only a very small portion of elderly around us were raising an actual animal, and even smaller amount of them are raising dogs. “Whey does that happen?” The question went into our mind.</p>
-       </div>   
-      </div>
-     </div>
-<div class="row">
-     </div></div>
-  
-      
-   <div class="container-fluid" style="padding-bottom:5vh; margin-bottom:5vh">
-  <div class="row">
-    <div class="col-sm-10 offset-sm-1 ">
-      <h1>RESEARCH</h1>
-      </div>
-    <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-         <p>In our research part, we mainly want to figure out the following parts of questions:</p>
-        <ol style='	font-weight:200;
-    font-size:1.25em; padding: 0 3% 0' >
-            <li>Is our predisposition correct?</li>
-            <li>What stopped them from raising a dog?</li>
-            <li>What are their technic proficiency and willingness to try motion sensing games?</li>
-        </ol>
-    </div>
-      <div class="col-12">
-         <img src="img/dogo-threeThings.png" alt="Litureature Review" style="max-width:600px; margin:auto auto 50px; display:block" class="Responsive image fullImage" >
-      </div>
-        <div class="col-12">
-         <img src="img/Dogo-inter2.png" alt="Design Proposal" style="max-width:600px; margin:auto; display:block" class="Responsive image fullImage" >
-      </div>   
-      </div> </div>   
-  
-  
-<div class="container-fluid" style="padding-bottom:5vh; margin-bottom:5vh">
-      <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-          <h1>DESIGN CONCEPT</h1>
-            <P>Basically, our research just verified what we think about the elderly, and raised several points for us to notice:</P>
-            <ol style='	font-weight:200;
-    font-size:1.25em; padding: 0 3% 0' >
-            <li>the elderly don’t want their pets to die, which points a guideline for our game to go</li>
-            <li>some elderly cannot stand intensive activity such as walking an active dog, thus our game should allow them to choose their own exercise intensity.</li>
-        </ol>
-            <P>Based on the results of our research, we decided to develop a dog-raising game for the elderly. In our game, the elderly could interact with the dog. To make it more emotionally appealing, we chose the avatar of dog to be a puppy dog. To encourage elderly to go out taking more exercise, we decided that we could combine our game with Fitbit to collect the steps of the elderly and convert that into some incitements in this game.</P>
-          </div>
-        <div class="col-12">
-         <img src="img/dogo-howto-1024x488.png" alt="Litureature Review" style="max-width:350px; margin:auto auto 50px; display:block" class="Responsive image fullImage" >
-      </div>
-        <div class="col-12">
-         <img src="img/dogo-designconcept.png" alt="Design Proposal" style="max-width:500px; margin:auto; display:block" class="Responsive image fullImage" >
-      </div>
-    </div>
-      </div>
 
-<div class="container-fluid" style="padding-bottom:5vh; margin-bottom:5vh">
-  <div class="row">
-    <div class="col-sm-10 offset-sm-1 ">
-      <h1>TASK FLOW & USER SCENARIO</h1>
-      </div>
-    <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-         <p>According to the design concept, we developed the game structure.</p>
-    <p>The elderly could choose a breed of puppy to raise. In our game, they could interact with the puppy. The dog has two status indicators. The relationships between those two indicators and game status are as following:</p>
-    </div>
-      <div class="col-12">
-         <img src="img/Dogo-iconchart.png" alt="Litureature Review" style="max-width:1000px; margin:auto auto 50px; display:block" class="Responsive image fullImage" >
-      </div>
-        <div class="col-12 col-sm-8 offset-sm-2 col-xl-6 offset-xl-3">
-         <p>Task flow is divided into in-game part and out-of-game part, as shown in the diagram.</p>
-        <img src="img/dg-workflow.png" alt="Litureature Review" style="max-width:800px; margin:auto auto 50px; display:block" class="Responsive image fullImage" >
-            <p>To better convey the impact of our design, we created a storyboard:</p></div>
-    <div class="col-12 col-sm-6">
-        <img src="img/dogo-scenario.png" alt="Litureature Review" style="max-width:1000px; float: right" class="Responsive image fullImage" ></div>
-    <div class="col-12 col-sm-6">
-        <img src="img/Doto-scenario2.png" alt="Litureature Review" style="max-width:1000px; " class="Responsive image fullImage" >
-    </div>
-      </div> </div>
+
     
 <div class="container-fluid" style="padding-bottom:5vh; margin-bottom:5vh">
-      <div class="row">
-        <div class="col-12">
-          <h1>IMPLEMENT</h1>
-          </div>
-        <div class="col-xs-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
-        <p>
-              We developed it on Unity 3D with LeapMotion API. To achieve better immersion experience, we adopted high fidelity model for dog and environmental settings, which we bought from the unity 3D library. Using our prototype, users could using one-hand movement to command a dog to sit, stand up, eat and move towards four direction.
-
-</p>
-        <p>
-             Due to the time limit, we decided to just develop the main part of motion sensing game, without actually implement the fitbit API.
-</p>
-          </div>
-          
-    </div>
+ 
     <div class="row">
         <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                 <div style="position:relative;height:0;padding-bottom:56.25%;"><iframe src="https://www.youtube.com/embed/RLSUCNXzWDM?ecver=2&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div></div></div>
       </div>
 
       
-<div class="container-fluid" style="padding-bottom:5vh; margin-bottom:5vh">
-      <div class="row">
-        <div class="col-12">
-          <h1>REFLECTION</h1>
-          </div>
-          <div class="col-xs-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
-          <h4 style="margin-top:30px">Coding</h4>
-        <p>
-              Actually this is the most difficult part for me and Mengdi. We had coding background before, but not proficient coder. Time for this project is so limited, there is only two days left for us to code. In terms of coding, we watched tutorials about how to play with Unity 3D. We find code pieces to edit and see what would happen.  We dare not say we totally figured out our codes in the end, but we successfully finished part of the game as planned.</p>
-              
-         <h4 style="margin-top:50px">Plan</h4>
-        <p>
-             Because the time budget for this project is so tight, we have to make our plan wisely. We successfully finished interview and decided on our main functions in one day, then we were facing the coding problem. We felt it was impossible for us to finish the whole game, so we chose to finish the main part, which is the motion sensing game part, first. As for the actual coding work, I and Mengdi divided the load of coding. She was in charge of figuring out the action of dog, and I was in charge of the LeapMotion API and scenes changing inside of the game.
-</p>
-          </div>
-    </div>
-      </div>
- 
 
  
 

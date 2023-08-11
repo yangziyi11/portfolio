@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Ziyi Yang">
+
+
+    <title>Location Service</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+     <link rel="icon" type="image/png" href="../iconHat.png" />
+  </head>
+
+  <body>
+         <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
+      <div class="nav-row row">
+      <div class="col-md-4 col-2">
+                <a class="navbar-brand" href="#">
+                      <div class="me hidden-sm-down" style="height:70px">
+                        <svg width="100px" height="70px" viewBox="0 0 107 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>iconHat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M29.0482841,5 L59.0954941,16.6858676 L59.0954941,43.6077397 L28.0117956,43.6077397 L28.0117956,32.7508308 L5.32937841,32.7508308 C5.32937841,32.7508308 0.605796635,33.2011352 0.0528979209,31.4383166 C-0.500000793,29.6754981 3.46360148,26.802135 3.46360148,26.802135 L29.0482841,5 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.152145607 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="59.0954941" height="38.6077397" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-4" x="17.7135151" y="1.39798877" width="4.35893835" height="11.3765487"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.138586957 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4.35893835" height="11.3765487" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <path d="M0.513848926,5.67079803 L4.87492918,0.775338585 L34.7906536,16.0791679 C34.7906536,16.0791679 34.8280497,17.6327225 33.3779093,18.564001 C31.9150788,19.5034291 28.8876118,19.9790006 25.2675861,19.5224277 C23.8542293,19.3441692 19.8817813,19.0158312 17.0368149,17.9252586 C14.0923357,16.7965394 11.0458021,14.8168192 9.35885676,13.5968396 C4.17607391,9.84871039 0.513848926,5.67079803 0.513848926,5.67079803 Z" id="path-7"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0953917572 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34.2768947" height="18.9224192" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="portfolioDesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconHat">
+            <g id="man" transform="translate(19.000000, 18.000000)">
+                <g id="me">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#000000" mask="url(#mask-3)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M30.0217465,37.5244525 C30.0217465,37.5244525 32.8734337,38.0952802 34.5728262,37.5244525 C36.2722187,36.9536248 37.8650965,34.889863 37.8650965,34.889863" id="mouth" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <ellipse id="Oval" fill="#000000" cx="29.1983972" cy="18.6494178" rx="2.42206163" ry="2.44071917"></ellipse>
+                <g id="hat" transform="translate(41.355367, 12.264198) rotate(-6.000000) translate(-41.355367, -12.264198) translate(23.855367, 2.264198)">
+                    <g id="Rectangle" transform="translate(19.892984, 7.086263) rotate(36.000000) translate(-19.892984, -7.086263) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#000000" mask="url(#mask-6)" stroke-width="6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="Rectangle-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use stroke="#000000" mask="url(#mask-9)" stroke-width="6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                    <h4 class="hidden-sm-down" style="margin-bottom: 0rem ">Ziyi Yang</h4>
+                </a>
+          </div>
+    <div class="nav-menu col-10 col-md-5 offset-md-3 ">
+      <div id="nav-icon4" class="hidden-lg-up" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                    </div>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a  class="nav-link" href="../index.html">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../profile.html">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../other.html">OTHER</a>
+      </li>
+    </ul>
+  </div>
+          </div>
+          </div>
+</nav>   
+
+      
+      <div class="container"  id="locationService"> 
+<div class="row align-items-end" style="height:100%; overflow: hidden; padding-bottom: 13vh" >
+       <div class="col-12 col-sm-11 col-md-5 offset-md-7" >
+        <p id="mmdTitle">Location Service</p>
+           <p id="mmdSubTitle">This is a part of FirstNet Push-to-talk release 3.5 MVP feature. I was in charge of the UX for this feature, including requirement discussion, UX flow development, client alignment, GUI spec release, and developer support. </p> <p style="font-size: 0.8em;">  * GUI was fine-tuned by our design system owner. UX content was reviewed by our client team's content writter.</p>
+      </div>
+ 
+       </div>
+  </div>  
+ 
+ 
+      
+
+ <div class="container-fluid" style="background-color: #EAEAEA; padding-top:20vh; padding-bottom:15vh; margin-bottom:5vh" >
+     <div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2"><p class="contentTitle">Process</p>
+             <p> Below is a high-level abstraction of the process. We revisit the previous phase(s) when needed.</p></div>
+          
+            <img src="img/locations_process.svg" alt="Process" class="responsive image fullImage">
+     </div> 
+
+ </div>
+      
+      
+<div class="container-fluid" style="margin-bottom:5vh; padding-top:20vh">
+     <div class="row textRow">
+         <div class="col-12 col-md-8 offset-md-2"><p class="contentTitle">User story &#38; pain points</p></div>
+         <div class="col-12 col-md-8 offset-md-2">
+
+       </div>
+         <hr>
+
+<div class="col-12 col-md-8 offset-md-2">
+    
+     <p>Based on the requirement, I identified 2 different types of users, developed the scenarios, concluded user needs from the scenario, and finally discussed with our clients for alignment. The analysis and our proposed features were well aknowledged by the client that they modified their requirement to include those features. </p>
+       </div>
+<img src="img/locations_userStory_authenticatedUser.svg" alt="User needs analysis" class="responsive image fullImage">
+ <img src="img/locations_userStory_normalUser.svg" alt="User needs analysis" class="responsive image fullImage">
+     </div> 
+ </div>
+      
+      
+      
+<div class="container-fluid" style="background-color: #F8F8FB; padding-bottom:7vh; margin-bottom:5vh; padding-top:7vh">
+       <div class="row" style="max-width:1200px;margin:auto">
+        <div class="col-sm-6 col-lg-4" >
+            <div class="feature">
+                <img src="img/locations_icon_search.svg" style="max-height:50px">
+                <h4>1. Search Location</h4>
+            <p>Authenticated should be able to search locations through address or (X, Y) in the map.</p>
+            <p style="font-size:0.8rem"><i>* Client SME confirmed the need and would like to add it to the feature. Design was ready, but feature dropped due to SDK readyness.</i></p>
+           </div></div>
+        <div class="col-sm-6 col-lg-4">
+             <div class="feature">
+                  <img src="img/locations_icon_view.svg" style="max-height:50px">
+                 <h4>2. View location</h4>
+            <p>Authenticated users need to view normal users' location. Their location needs to be constantly updated in the map view.</p>
+                 <p style="font-size:0.8rem"><i>* It requires the authenticated users and normal users to be in the same location capable group.</i></p>
+             
+             </div></div>
+         <div class="col-sm-6 col-lg-4">
+             <div class="feature">
+                  <img src="img/locations_icon_MultiUser.svg" style="max-height:50px">
+                 <h4>3. Multi-user selection</h4>
+            <p>Authenticated users want a way to quickly select a group of users, in preparation for starting ad-hoc group call. </p>
+             </div></div>
+                   <div class="col-sm-6 col-lg-4" >
+            <div class="feature">
+                <img src="img/locations_icon_GroupCall.svg" style="max-height:50px">
+                <h4>4. Group call</h4>
+            <p>Authenticated users need to start ad-hoc group call from the map view.</p>
+           </div></div>
+         <div class="col-sm-6 col-lg-4">
+             <div class="feature">
+                  <img src="img/locations_icon_1timeshare.svg" style="max-height:50px">
+                 <h4>5. One time location share</h4>
+            <p>Comparing to normal users' location constantly updated and pushed to authenticated users, all users need a quick and easy way to share their location to any other users.</p>
+             </div></div>
+        <div class="col-sm-6 col-lg-4" >
+            <div class="feature">
+                <img src="img/locations_icon_battery.svg" style="max-height:50px">
+                <h4>6. Battery constraints</h4>
+            <p>Location reporting consumes battery. The authenticated users might want the location to be up-to-date, but it might not always be a good thing for the location reporter. </p>
+           </div></div>
+        
+       </div>
+      </div>
+      
+      
+      
+<div class="container-fluid" style="margin-bottom:5vh; padding-top:20vh">
+    <div class="row textRow" style="padding-bottom:2vh"> 
+        <div class="col-12 col-md-8 offset-md-2">
+        <p class="contentTitle">Access map view and start 1:1 call</p>
+        <p>Authenticated Users can select another user from the map view, and start 1:1 call there.</p>
+     </div>
+    </div>
+
+    <img src="img/locations_mapAccess_1to1call.png" alt="UX flow for starting 1 to 1 callz" class="responsive image fullImage">
+      </div>
+      
+<div class="container-fluid" style="margin-bottom:5vh; padding-top:20vh">
+    <div class="row textRow" style="padding-bottom:2vh"> 
+        <div class="col-12 col-md-8 offset-md-2">
+        <p class="contentTitle">The location sender and the viewer</p>
+        <p>The initial ask was to have the normal user always be location sender, the authenticated user is always the location viewer, and locations will be transmitted up to authenticated user's choice.</p>
+        <p>When defining user painpoints, we discovered this is not enough and proposed to add a one-time location share feature, to share the location as (X,Y) coordinates, which can be rendered and opened in a map on the receiver side. It's a simple change, and will make below changes:</p>
+  <img src="img/locations_locationShareDiagram.png" alt="Before and after our proposed location share feature" class="responsive image fullImage">
+     </div>
+    </div>
+      </div>
+
+<div class="container-fluid" style="margin-bottom:5vh;">
+    <div class="row textRow" style="padding-bottom:2vh"> 
+        <div class="col-12 col-md-8 offset-md-2">
+           <p>Actual design below:</p> 
+        </div>
+    </div>
+    <img src="img/locations_1timeLocationShare_normalUser.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage">      
+     <img src="img/locations_1timeLocationshare_longTap.png" alt="Long tap to switch dropped pin position" class="responsive image fullImage">    
+   
+</div>
+      
+      
+<div class="container-fluid" style="padding-top:15vh">
+    <div class="row textRow">
+    <div class="col-12 col-md-8 offset-md-2">
+    <p class="contentTitle">Start ad-hoc group call from map view</p>
+    <p>When design this feature, my goal is to focus on the user needs, and cover different use cases. I studied and covered use cases when users initiate call by (1) manually one-by-one selection from the map, (2) add contact that's not in the map view, (3) fast bulk selection, (4) single tap to add dispatchers and other supervisors to the call:</p>
+        </div></div>
+     <img src="img/locations_groupcall1.png" alt="UX flow for manual select users" class="responsive image fullImage">
+    
+    <img src="img/locations_groupcall2.png" alt="UX flow for selecting from contacts list" class="responsive image fullImage">
+    
+    <img src="img/locations_groupcall4.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage">
+    <div class="row">
+    <div class="col-6">
+        <img src="img/locations_dropped1.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage"></div>
+     <div class="col-6">
+         <img src="img/locations_dropped2.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage"></div></div>
+      </div> 
+
+<div class="container-fluid" style="margin-bottom:5vh; padding-top:15vh">
+    <div class="row textRow" style="padding-bottom:2vh"> 
+        <div class="col-12 col-md-8 offset-md-2">
+        <p class="contentTitle">Location share frequency</p>
+        <p>There is a trade-off between timely location information for authenticated users, and potential battery drain for normal users (and authenticated users).</p>
+
+<p>We want to give authenticated user flexibility to make decisions based on the real situation. Client's initial ask is to provide the control as a slider. Let's inspect 2 slider type below:</p>
+
+<img src="img/location_frequency_diagram1.svg" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage">  
+
+            <p>The client’s initial ask is the left type. However, it has limitations below:</p>
+            <p>#1. It makes small frequencies really hard to adjust. 
+            <p>#2. The same changes in slider traverl distance, doesn't necessarily mean the same for the user. Users won't care the changes from 20 minutes to 30 minutes, as much as the changes from 1 second to 10 minute.</p>
+            <p>If we consider the right side type of slider, a more usual form of it, is a list allowing single choice. Then the question comes to <b>how many choices we need to give to the users.</b> Considering the nature of first responders' work, we would like to only provide the most essential choices to them, so that they can make easier choices (Hick's law) and focus on their task on hand. </p> <p>Lastly, with the help of SME in our client team, <b>we decomposed the authenticated users' location monitoring needs to 3 stages: Active checking, Monitoring, Idle.</b> We named the choices according to each scenario, with subtext informing users the number behind each choices. Admin can modify frequency for each choices in their web portal. The final design is simple, yet still flexible.</p>
+     </div>
+    </div>
+
+    <img src="img/location_frequency_diagram2.svg" alt="How the settings involves" class="responsive image fullImage">
+      </div>
+
+<div class="container-fluid" style="padding-bottom:5vh;">
+      <div class="row textRow">
+        <div class="col-12 col-md-8 offset-md-2">
+            <p>
+                Design is as below:
+            </p>
+         </div></div>
+            <img src="img/locations_frequency.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage">  
+     <img src="img/locations_frequencyChange_Authenticated.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage"> 
+    <img src="img/locations_frequencyChange_normal%20user.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage"> 
+      </div>
+    
+<div class="container-fluid" style="padding-bottom:5vh; padding-top:15vh">
+      <div class="row textRow">
+        <div class="col-12 col-md-8 offset-md-2">
+          <p class="contentTitle">
+            Challenges
+            </p>
+            <p>
+                Main challenge is the technical details. There are many stakeholders and many platforms involved for this feature. We need to understand Android requirement for requesting backgrond location, map SDK current functionalities and future plans, how the app communicates with server to retrieve refreshed locations, and what our development team can do. </p> <p> It was a really challenging, yet, interesting process to understand what's going on in the back end, and think about what we need to let users see, and what would be too much and distracting for users.
+            </p>
+         </div></div>
+            
+      </div>
+
+<div class="container-fluid" style="padding-bottom:5vh; padding-top:15vh">
+      <div class="row textRow">
+        <div class="col-12 col-md-8 offset-md-2">
+          <p class="contentTitle">
+            Takeaways
+            </p>
+            <p>
+                <b>#1. It's important to think about the user, even if it's B2B project.</b> Client will appreciate our expertise and empathy for the user. It also helps build trust with the client.
+            </p>
+            <p>
+                <b>#2. When analyzing the requirement, think about why, and what problem it's trying to resolve.</b> We don't even have time to conduct primary user research, so we heavily rely on the requirement to understand what the client want, and what their users potentially want. We need to avoid going to literal about the requirement, but need to understand why. Maybe there are better approaches. That's the value we can bring to the client. Of course, any other approaches need to get aligned with the client before we commit to it.
+            </p>
+            <p>
+                <b>#3. Don't compromise UX.</b> One of the design decision I regrets for this project, is the bulk select for group call. We ended with rectangular selection because of developer's preference. However, from UX's perspective, circle selection is better. Users would want to start a group  chat with the same point-to-center distance. Circle is a good shape. We can propose the best UX, and let PM/developers/client decide whether the cost worth the effort.</p>
+            <p>
+                <b>#4. Leverage the client to push design decisions.</b> Since this is a B2B project, we sometimes receive resistance from our development team, and the 3rd party SDK provider. We can advocate the user needs to the client, and they help us to push through design decisions.</p>
+                        <p>
+            <b>#5. Connect to stakeholders, but still ready for the change. </b> We need to shoot for the alignment before going too far, either it's technical feasibility, or client needs, but also be ready for any changes along the road.</p>
+         </div></div>
+            
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" ></script>
+     <script src="js/jquery.scrollie.min.js"></script>  
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../myjs.js" crossorigin="anonymous"></script>
+  </body>
+</html>

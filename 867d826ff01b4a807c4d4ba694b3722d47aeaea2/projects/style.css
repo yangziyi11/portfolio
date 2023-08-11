@@ -299,10 +299,9 @@ h2{
 
 .contentSubTitle {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size:1.5rem;
     text-align: center;
-    text-decoration: underline;
 }
 .importantWords{
     font-family: 'Zilla Slab', serif;
@@ -381,6 +380,16 @@ h2{
 #m{
 	height:100%; min-width:100%;
     background: url(img/mmd_showcase.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#locationService{
+	height:100%; min-width:100%;
+    background: url(img/locations_showcase.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -671,10 +680,12 @@ padding: 30px;
     background: url(img/s2.jpg);
     background-position: center center;
     background-size: cover;
-    max-height:100%;
-            
+    max-height:100%;       
             
 }
+    #locationService {
+    background: url(img/locations_showcase.png) no-repeat center center fixed; 
+    }
     .navbar{
     padding: 0 1rem;
     transition: top 0.2s ease-in-out;
