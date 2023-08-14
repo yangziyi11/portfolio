@@ -15,13 +15,16 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
      <link rel="icon" type="image/png" href="../iconHat.png" />
+      
+    <!-- click image to expand css. credit to lightbox -->
+      <link rel="stylesheet" href="../css2/lightbox.css">
   </head>
 
   <body>
          <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
       <div class="nav-row row">
       <div class="col-md-4 col-2">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                       <div class="me hidden-sm-down" style="height:70px">
                         <svg width="100px" height="70px" viewBox="0 0 107 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
@@ -130,8 +133,9 @@
      <div class="row textRow">
          <div class="col-12 col-md-8 offset-md-2"><p class="contentTitle">Process</p>
              <p> Below is a high-level abstraction of the process. We revisit the previous phase(s) when needed.</p></div>
-          
-            <img src="img/locations_process.svg" alt="Process" class="responsive image fullImage">
+         
+        <a href="img/locations_process.svg" data-lightbox="process">          
+            <img src="img/locations_process.svg" alt="Process" class="responsive image fullImage"></a>
      </div> 
 
  </div>
@@ -210,8 +214,10 @@
         <p>Authenticated Users can select another user from the map view, and start 1:1 call there.</p>
      </div>
     </div>
-
-    <img src="img/locations_mapAccess_1to1call.png" alt="UX flow for starting 1 to 1 callz" class="responsive image fullImage">
+    
+    <a href="img/locations_mapAccess_1to1call.png" data-lightbox="1to1call" data-title="Authenticated Users can select another user from the map view, and start 1:1 call there.">          
+            <img src="img/locations_mapAccess_1to1call.png" alt="1 to 1 call flow" class="responsive image fullImage"></a>
+    
       </div>
       
 <div class="container-fluid" style="margin-bottom:5vh; padding-top:20vh">
@@ -231,8 +237,10 @@
            <p>Actual design below:</p> 
         </div>
     </div>
-    <img src="img/locations_1timeLocationShare_normalUser.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage">      
-     <img src="img/locations_1timeLocationshare_longTap.png" alt="Long tap to switch dropped pin position" class="responsive image fullImage">    
+        <a href="img/locations_1timeLocationShare_normalUser.png" data-lightbox="1TimeShare" data-title="Users can share 1 time location to other users. Authenticated users already have access to map, and we are providing entry point for normal users as well.">          
+            <img src="img/locations_1timeLocationShare_normalUser.png" alt="1 time location share" class="responsive image fullImage"></a>
+        <a href="img/locations_1timeLocationshare_longTap.png" data-lightbox="1TimeShare" data-title="Users can also share a random location">          
+            <img src="img/locations_1timeLocationshare_longTap.png" alt="Long tap to switch dropped pin position" class="responsive image fullImage"></a>
    
 </div>
       
@@ -243,16 +251,26 @@
     <p class="contentTitle">Start ad-hoc group call from map view</p>
     <p>When design this feature, my goal is to focus on the user needs, and cover different use cases. I studied and covered use cases when users initiate call by (1) manually one-by-one selection from the map, (2) add contact that's not in the map view, (3) fast bulk selection, (4) single tap to add dispatchers and other supervisors to the call:</p>
         </div></div>
-     <img src="img/locations_groupcall1.png" alt="UX flow for manual select users" class="responsive image fullImage">
+
+    <a href="img/locations_groupcall1.png" data-lightbox="groupCall" data-title="Authenticated users can start group call by hand picking users on the map one by one.">          
+    <img src="img/locations_groupcall1.png" alt="select users one by one to start group call" class="responsive image fullImage"></a>
     
-    <img src="img/locations_groupcall2.png" alt="UX flow for selecting from contacts list" class="responsive image fullImage">
     
-    <img src="img/locations_groupcall4.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage">
+    <a href="img/locations_groupcall2.png" data-lightbox="groupCall" data-title="Authenticated users can also choose contacts for group call">          
+    <img src="img/locations_groupcall2.png" alt="Authenticated users can also choose contacts for group call" class="responsive image fullImage"></a>
+    
+    <a href="img/locations_groupcall4.png" data-lightbox="groupCall" data-title="One click to select all visible users on current viewport">          
+    <img src="img/locations_groupcall4.png" alt="One click to select all visible users on current viewport" class="responsive image fullImage"></a>
     <div class="row">
     <div class="col-6">
-        <img src="img/locations_dropped1.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage"></div>
+        <a href="img/locations_dropped1.png" data-lightbox="groupCall" data-title="Dropped: Circular selection">          
+    <img src="img/locations_dropped1.png" alt="Dropped: Circular" class="responsive image fullImage"></a>
+        </div>
      <div class="col-6">
-         <img src="img/locations_dropped2.png" alt="UX flow for selecting all on current viewport" class="responsive image fullImage"></div></div>
+    <a href="img/locations_dropped2.png" data-lightbox="groupCall" data-title="Dropped: Free hand draw">          
+    <img src="img/locations_dropped2.png" alt="Dropped: Free hand draw" class="responsive image fullImage"></a>
+        
+        </div></div>
       </div> 
 
 <div class="container-fluid" style="margin-bottom:5vh; padding-top:15vh">
@@ -282,9 +300,13 @@
                 Design is as below:
             </p>
          </div></div>
-            <img src="img/locations_frequency.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage">  
-     <img src="img/locations_frequencyChange_Authenticated.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage"> 
-    <img src="img/locations_frequencyChange_normal%20user.png" alt="Entry point for one time location share, search, and locate me feature" class="responsive image fullImage"> 
+        <a href="img/locations_frequency.png" data-lightbox="locationFrequency" data-title="Authenticated users can change location reporting frequency for normal users in the location capable group">          
+    <img src="img/locations_frequency.png" alt="Authenticated users can change location reporting frequency for normal users in the location capable group" class="responsive image fullImage"></a>
+    <a href="img/locations_frequencyChange_Authenticated.png" data-lightbox="locationFrequency" data-title="When location reporting frequency changed, users will get notified">          
+    <img src="img/locations_frequencyChange_Authenticated.png" alt="When location reporting frequency changed, users will get notified" class="responsive image fullImage"></a>
+    <a href="img/locations_frequencyChange_normal%20user.png" data-lightbox="locationFrequency" data-title="Location frequency change will be logged in conversation view">          
+    <img src="img/locations_frequencyChange_normal%20user.png" alt="Location frequency change will be logged in conversation view" class="responsive image fullImage"></a>
+    
       </div>
     
 <div class="container-fluid" style="padding-bottom:5vh; padding-top:15vh">
@@ -331,5 +353,12 @@
      <script src="js/jquery.scrollie.min.js"></script>  
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="../myjs.js" crossorigin="anonymous"></script>
+    <script src="../js/lightbox.js"></script>
+      <script>
+    lightbox.option({
+      'fitImagesInViewport': false,
+     'maxHeight':500
+    })
+</script>
   </body>
 </html>

@@ -21,7 +21,7 @@ H<!DOCTYPE html>
          <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
       <div class="nav-row row">
       <div class="col-md-4 col-2">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                       <div class="me hidden-sm-down" style="height:70px">
                         <svg width="100px" height="70px" viewBox="0 0 107 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
@@ -206,8 +206,8 @@ H<!DOCTYPE html>
          </div>
         <div class="col-md-8">
         <h5>a. Tab</h5>
-            <p>Pros: Users will get a larger PTT panel with clearer floor status. Bigger PTT key will also make it easier for users to operate in urgent situations, where limited attention can be assigned to our app. </p>
-            <p>Cons: Users need to do one more swipe to go to the conversation panel. Also, users will not be able to read conversation history as they speak.</p>
+            <p><b>Pros:</b> Users will get a larger PTT panel with clearer floor status. Bigger PTT key will also make it easier for users to operate in urgent situations, where limited attention can be assigned to our app. </p>
+            <p><b>Cons:</b> Users need to do one more swipe to go to the conversation panel. Also, users will not be able to read conversation history as they speak.</p>
         </div>
     </div>
             <br>
@@ -217,13 +217,17 @@ H<!DOCTYPE html>
         </div>
     <div class="col-md-8">
         <h5>b. Expandable PTT panel</h5>
-            <p>Pros: Previous structure is kept, while we also provide a solution for users with more needs. </p>
-            <p>Cons: If most users want to use the expanded view, they need an extra step to do it. More importantly, in later design phase, another new feature was decided to use the swipe up/down interaction for conversation view, which making them conflicts with each other. </p>
+            <p><b>Pros:</b> Previous structure is kept, while we also provide a solution for users with more needs. </p>
+            <p><b>Cons:</b> If most users want to use the expanded view, they need an extra step to do it. More importantly, in later design phase, another new feature was decided to use the swipe up/down interaction for conversation view, which making them conflicts with each other. </p>
         </div>
     </div>
 
                   </div>
-    </div>  </div>
+    </div>  
+      
+    <img src="img/PTT_videoExploration.png" style="width: 100%; display:block; margin-bottom: 2vh">
+    
+      </div>
 
 <div class="container-fluid" style="padding-bottom:5vh;  padding-top:5vh">
   <div class="row textRow">
@@ -245,50 +249,13 @@ H<!DOCTYPE html>
   <div class="row textRow">
       <div class="col-12 col-md-8 offset-md-2">
             <p><span style="font-weight: 600; font-size: 15pt;"> (3)Easy Push-to-talk </span> </p>
-          <p>Comparing to traditional LMR services, we have the concept of "Call" in our Push-to-talk application. Due to the previous KPI design, HQ designers decided to use "Tap" interaction for call start, because it will decrease the time between users interaction to the time point the call actually starts.</p>
-           <p>Users complained that they sometimes need to press and talk to speak, but sometimes just need to tap to speak. It's very confusing.</p>
-          <p>We discussed with client stakeholders with user research findings, and also involved our PM into discussion. Our client agrees to our suggestion for making call activation and floor granting interaction consistent with "press and hold". KPI was modified for better user experience.</p>
-        <p>After that, I worked with our GUI designer to redefined the style for PTT button status. We use filled solid style to indicate the button is being pushed, and use linear style to indicate the button isn't been pressed.</p>
-
-
-           <p>Below is the updated design: </p>
+          <p> Users feel frustrated when they have to end the current call to start a new call. To make it correct, we made below changes:</p>
+    
       </div>
        </div> </div>
 
 
-<div class="container-fluid" style="background-color: #F8F8FB; padding-bottom:7vh; margin-bottom:2vh; padding-top:7vh">
-    <div class="row">
-         <div class="col-md-2">
-           <img src="img/PTT_Option1.gif" style="width: 100%; max-width:300px; border: 1px solid #000; display:block; margin-bottom: 2vh">
-         </div>
-        <div class="col-md-4">
-        <h4>Option 1 - Tab design</h4>
-            <p>We can use the tab design to separate PTT panel and Conversation panel. Users can tap the tab name, or swipe left and right to switch back and forth. </p>
-            <p>Pros: Users will get a larger PTT panel with clearer floor status. Bigger PTT key will also make it easier for users to operate in urgent situations, where limited attention can be assigned to our app. </p>
-            <p>Cons: Users need to do one more swipe to go to the conversation panel. Also, users will not be able to read conversation history as they speak.</p>
-        </div>
-        <div class="col-md-2">
-           <img src="img/PTT_Option2.gif" style="width: 100%; max-width:300px; border: 1px solid #000; display:block; margin-bottom: 2vh">
-        </div>
-    <div class="col-md-4">
-        <h4>Option 2 - Optional expanded PTT panel</h4>
-            <p>We can use keep the original design, but make an optional expanded view for the PTT panel. Users can swipe up and down to expand and shrink the view.</p>
-            <p>Pros: Previous structure is kept, while we also provide a solution for users with more needs. </p>
-            <p>Cons: If most users want to use the expanded view, they need an extra step to do it. </p>
-        </div>
-    </div>
-    </div>
-
-<div class="container-fluid" style="padding-bottom:0vh; padding-top:0vh">
-      <div class="row textRow">
-        <div class="col-12 col-md-8 offset-md-2">
-            <p>Considering users reported that they seldom use text message function, we decided to go 1st option. After several rounds of internal review, we added information of who can speak to further emphasize the floor status. As for the graphic interface design, we improved the color scheme of the PTT button with traffic light metaphor. </p> <p> Below is a comparison of the old design and the new design.</p>
-          </div>
-    </div>
-</div>
-
-<img src="img/PTT_OldCV.png" style="width: 100%; display:block; margin-bottom: 2vh">
-<img src="img/PTT_NewCV.png" style="width: 100%; display:block; margin-bottom: 2vh">
+<img src="img/PTT_EasyPushToTalk.svg" style="width: 100%; display:block; margin-bottom: 2vh">
 
 <div class="container-fluid" style="padding-bottom:5vh; margin-bottom:1vh; padding-top:5vh">
           <p style="text-align: center; font-weight:400; font-size:20pt">For more information about this project, please email me at <a style="color:#4A90E2" href="mailto:yangziyi93@gmail.com?Subject=Hello" target="_top">yangziyi93@gmail.com</a></p></div>
