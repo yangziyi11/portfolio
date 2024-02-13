@@ -392,6 +392,16 @@ h2{
   margin-bottom: 0;
 }
 
+#mnoc{
+	height:100%; min-width:100%;
+    /*background: url(img/mmd_showcase.png) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
 #locationService{
 	height:100%; min-width:100%;
     background: url(img/locations_showcase.png) no-repeat center center fixed; 
